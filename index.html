@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Pemakaian Sendiri dan Rugi-Rugi Daya</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Pemakaian Sendiri dan Rugi-Rugi Daya</h1>
+        <form id="calculation-form">
+            <h2>Pemakaian Sendiri</h2>
+            <label for="total-power">Total Daya Pembangkit (kW):</label>
+            <input type="number" id="total-power" required>
+
+            <label for="self-consumption">Persentase Pemakaian Sendiri (%):</label>
+            <input type="number" id="self-consumption" required>
+
+            <h2>Rugi-Rugi Daya pada Transformer</h2>
+            <label for="input-power">Daya Masuk (kW):</label>
+            <input type="number" id="input-power" required>
+
+            <label for="output-power">Daya Keluar (kW):</label>
+            <input type="number" id="output-power" required>
+
+            <button type="submit">Hitung</button>
+        </form>
+        <div id="result">
+            <h2>Hasil Perhitungan</h2>
+            <p id="self-consumption-result"></p>
+            <p id="losses-result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
